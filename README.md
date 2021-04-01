@@ -1,7 +1,9 @@
 # Deep Learning for Needle Detection in a Cannulation Simulator
 
 This is the Kera implementation of the paper *Deep Learning for Needle Detection in a Cannulation Simulator*. If you build projects based on the code, please cite the paper. The bibtex is:
+'''
 
+'''
 
 ## Data sets and network weights 
 Our networks are trained and tested using the [data sets](https://drive.google.com/drive/folders/1m18R03A3EDoURAUM184zxrcUN4C1Eieb?usp=sharing).
@@ -27,3 +29,5 @@ Our real-time experiments are accomplished on a system including:
 6. Pandas 1.1.3 
 8. Pillow 8.0.0 
 9. h5py 2.10.0 
+10. CUDA V9.0.176
+11. cudnn 9.0
