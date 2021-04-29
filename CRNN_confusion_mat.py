@@ -175,7 +175,7 @@ ax.tick_params(axis='y', which='major', pad=10)
 
 # Show the results in percentage
 confusionMat_percent = np.zeros((3,3))
-number_of_frames=[3873, 1117, 1170]
+number_of_frames=[(3903-timesteps_for_LSTM), 1117, 1170]
 for i in range(len(category)):
     for j in range(len(category)):
         confusionMat_percent[i,j] = confusionMat[i,j]/number_of_frames[i]
