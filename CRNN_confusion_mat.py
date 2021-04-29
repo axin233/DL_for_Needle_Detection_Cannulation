@@ -10,7 +10,7 @@ from keras.preprocessing.image import ImageDataGenerator
 from keras.preprocessing.sequence import TimeseriesGenerator
 from keras.layers import Conv2D, MaxPool2D, Flatten, Dense, TimeDistributed,LSTM 
 
-csv_file_test='/home/jianxig/test_set_17_combo/labels_for_test(d_17).csv'
+csv_file_test='/home/jianxig/test_set_17_combo/labels_for_test_seq(d_17).csv'
 test_data_dir = "/home/jianxig/test_set_17_combo/frames/"
 img_width = 112
 img_height = 112
