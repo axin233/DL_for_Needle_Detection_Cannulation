@@ -3,7 +3,13 @@
 This is the Kera implementation of the paper *Deep Learning for Needle Detection in a Cannulation Simulator*. If you build projects based on the code, please cite the paper. The bibtex is:
 
 ```
-{}
+@article{gao2021deep,
+  title={Deep Learning for Needle Detection in a Cannulation Simulator},
+  author={Gao, Jianxin and Lin, Ju and Kil, Irfan and Singapogu, Ravikiran B and Groff, Richard E},
+  journal={arXiv e-prints},
+  pages={arXiv--2105},
+  year={2021}
+}
 ```
 
 ## Data sets and network parameters 
