@@ -1,5 +1,5 @@
 # Deep Learning for Needle Detection in a Cannulation Simulator
-
+<!--
 This is the Keras implementation of the paper *Deep Learning for Needle Detection in a Cannulation Simulator*. If you build projects based on the code, please cite the paper. The bibtex is:
 
 ```
@@ -11,11 +11,12 @@ This is the Keras implementation of the paper *Deep Learning for Needle Detectio
   year={2021}
 }
 ```
+-->
 
-## Data sets and network parameters 
-Our networks are trained and tested using the [data sets](https://drive.google.com/drive/folders/1m18R03A3EDoURAUM184zxrcUN4C1Eieb?usp=sharing).
+## Project description
+Cannulation is one of the major steps during hemodialysis. To improve clinicians' cannulation skill and avoid putting patients' at risk, we desgin a simulator for cannulation training. Our low-cost cannulation simulator uses deep learning techniques for needle puncture and infiltration detection. The detailed description of the simulator can be found at [^2021paper].
 
-During the training process, we recorded the network parameters with respect to the highest validation accuracy. To duplicate our results, please download those [parameters](https://drive.google.com/drive/folders/1D0HNDkNfcTo97wkUPlXHdxkag2i4PnqO?usp=sharing) and load them to the corresponding network model.
+[^2021paper]: Gao, Jianxin, Ju Lin, Irfan Kil, Ravikiran B. Singapogu, and Richard E. Groff. "Deep Learning for Needle Detection in a Cannulation Simulator." In 2021 International Symposium on Medical Robotics (ISMR), pp. 1-7. IEEE, 2021.
 
 ## Video demo
 To verify the proposed method, we processed a video using CRNN(30ts). This video records an insertion at location FC (i.e., Front Center). The ground truth and the predicted results are shown at the bottom right of the video. 
@@ -26,6 +27,10 @@ The network detects needle puncture and infiltration by classifying video frames
 
 https://user-images.githubusercontent.com/59490151/116702743-7b605a00-a997-11eb-96de-17c8098f3b70.mp4
 
+## Data sets and network parameters 
+Our networks are trained and tested using the [data sets](https://drive.google.com/drive/folders/1m18R03A3EDoURAUM184zxrcUN4C1Eieb?usp=sharing).
+
+During the training process, we recorded the network parameters with respect to the highest validation accuracy. To duplicate our results, please download those [parameters](https://drive.google.com/drive/folders/1D0HNDkNfcTo97wkUPlXHdxkag2i4PnqO?usp=sharing) and load them to the corresponding network model.
 
 ## System requirements for training and testing the networks
 Our networks are trained and tested on a system including:
