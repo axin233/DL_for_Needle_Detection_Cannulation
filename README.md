@@ -1,6 +1,6 @@
 # Deep Learning for Needle Detection in a Cannulation Simulator
 
-This is the Kera implementation of the paper *Deep Learning for Needle Detection in a Cannulation Simulator*. If you build projects based on the code, please cite the paper. The bibtex is:
+This is the Keras implementation of the paper *Deep Learning for Needle Detection in a Cannulation Simulator*. If you build projects based on the code, please cite the paper. The bibtex is:
 
 ```
 @article{gao2021deep,
@@ -27,7 +27,7 @@ The network detects needle puncture and infiltration by classifying video frames
 https://user-images.githubusercontent.com/59490151/116702743-7b605a00-a997-11eb-96de-17c8098f3b70.mp4
 
 
-## System configuration for training and testing the networks
+## System requirements for training and testing the networks
 Our networks are trained and tested on a system including:
 1. Python 3.6.10
 2. OpenCV 3.1.0 
@@ -36,7 +36,7 @@ Our networks are trained and tested on a system including:
 5. CUDA V10.2.89
 6. cudnn 8.0.0.180
 
-## System configuration for real-time video processing
+## System requirements for real-time video processing
 Our real-time experiments are accomplished on a system including:
 1. Python 3.6.7
 2. TensorFlow-gpu 1.8.0 
