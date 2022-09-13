@@ -1,6 +1,6 @@
 # Deep Learning for Needle Detection in a Cannulation Simulator
 <!--
-This is the Keras implementation of the paper *Deep Learning for Needle Detection in a Cannulation Simulator*. If you build projects based on the code, please cite the paper. The BibTeX is:
+This is the Keras implementation of the paper *Deep Learning for Needle Detection in a Cannulation Simulator*. If you build projects based on the code, please cite the article. The BibTeX is:
 
 ```
 @article{gao2021deep,
@@ -15,16 +15,16 @@ This is the Keras implementation of the paper *Deep Learning for Needle Detectio
 -->
 
 ## Project description
-Cannulation is one of the major steps during hemodialysis. To improve clinicians' cannulation skills and avoid putting patients at risk, we design a simulator (shown in Fig. 1a-c) for cannulation training. Our low-cost cannulation simulator uses deep learning techniques for needle puncture and infiltration detection. The detailed description of the simulator can be found at [^2021paper].
+Cannulation is one of the significant steps during hemodialysis. To improve clinicians' cannulation skills and avoid putting patients at risk, we design a simulator (shown in Fig. 1a-c) for cannulation training. Our low-cost cannulation simulator uses deep learning techniques for needle puncture and infiltration detection. The detailed description of the simulator can be found at [^2021paper].
 
 ![cropped img](https://user-images.githubusercontent.com/59490151/189487389-c5d335cf-efd9-44f3-88aa-ee11499a84dc.PNG)
 
 [^2021paper]: Gao, Jianxin, Ju Lin, Irfan Kil, Ravikiran B. Singapogu, and Richard E. Groff. "Deep Learning for Needle Detection in a Cannulation Simulator." In 2021 International Symposium on Medical Robotics (ISMR), pp. 1-7. IEEE, 2021.
 
 ## Video demo
-To verify the proposed method, we processed a video using CRNN(30ts)[^2021paper]. This video records an insertion at location FC (i.e., Front Center)[^2021paper]. The ground truth and the predicted results are shown at the bottom right of the video. 
+We processed a video using CRNN(30ts)[^2021paper] to verify the proposed method. This video records an insertion at location FC (i.e., Front Center)[^2021paper]. The ground truth and the predicted results are shown at the bottom right of the video. 
 
-The network detects needle puncture and infiltration by classifying video frames into 3 classes, namely:
+The network detects needle puncture and infiltration by classifying video frames into three classes, namely:
 - NoNeedle[^2021paper] (shown in green): The needle tip is not in the fistula.
 - Fist[^2021paper] (shown in blue): The needle tip is in the fistula.
 - Infil[^2021paper] (shown in red): The needle tip has infiltrated the fistula.
@@ -49,3 +49,6 @@ Our real-time experiments are accomplished on a system with:
 2. TensorFlow-GPU 1.8.0 
 3. OpenCV 4.5.1.48
 4. CUDA V9.0.176
+
+## Acknowledgment
+This project was supported by an NIH/NIDDK K01 Award (K01DK111767). Clemson University is acknowledged for its generous allotment of computing time on the Palmetto cluster. Also, I would like to express my gratitude to my adviser, Dr. Richard E. Groff and Dr. Ravikiran B. Singapogu, who guided me throughout the project.
