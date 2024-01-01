@@ -1,40 +1,41 @@
 # Deep Learning for Needle Detection in a Cannulation Simulator
-<!--
+
 This is the Keras implementation of the paper *Deep Learning for Needle Detection in a Cannulation Simulator*. If you build projects based on the code, please cite the article. The BibTeX is:
 
 ```
-@article{gao2021deep,
+@inproceedings{gao2021deep,
   title={Deep Learning for Needle Detection in a Cannulation Simulator},
   author={Gao, Jianxin and Lin, Ju and Kil, Irfan and Singapogu, Ravikiran B and Groff, Richard E},
-  journal={arXiv e-prints},
-  pages={arXiv--2105},
-  year={2021}
+  booktitle={2021 International Symposium on Medical Robotics (ISMR)},
+  pages={1--7},
+  year={2021},
+  organization={IEEE}
 }
 
 ```
--->
 
-## Project description
-Cannulation is one of the significant steps during hemodialysis. To improve clinicians' cannulation skills and avoid putting patients at risk, we design a simulator (shown in Fig. 1a-c) for cannulation training. Our low-cost cannulation simulator uses deep learning techniques for needle puncture and infiltration detection. The detailed description of the simulator can be found at [^2021paper].
+
+## Introduction
+Cannulation is one of the significant steps during hemodialysis. To improve clinicians' cannulation skills and avoid putting patients at risk, we design a simulator (shown in Fig. 1) for cannulation training. Our low-cost cannulation simulator uses deep-learning techniques for needle puncture and infiltration detection. A detailed description of the simulator can be found in [^2021paper].
 
 ![cropped img](https://user-images.githubusercontent.com/59490151/189487389-c5d335cf-efd9-44f3-88aa-ee11499a84dc.PNG)
 
 [^2021paper]: Gao, Jianxin, Ju Lin, Irfan Kil, Ravikiran B. Singapogu, and Richard E. Groff. "Deep Learning for Needle Detection in a Cannulation Simulator." In 2021 International Symposium on Medical Robotics (ISMR), pp. 1-7. IEEE, 2021.
 
 ## Video demo
-We processed a video using CRNN(30ts)[^2021paper] to verify the proposed method. This video records an insertion at location FC (i.e., Front Center)[^2021paper]. The ground truth and the predicted results are shown at the bottom right of the video. 
+The following video shows the detection results of CRNN(30ts)[^2021paper]. This video, excluded from the training data, records an insertion at location FC (i.e., Front Center)[^2021paper]. 
 
 The network detects needle puncture and infiltration by classifying video frames into three classes, namely:
-- NoNeedle[^2021paper] (shown in green): The needle tip is not in the fistula.
-- Fist[^2021paper] (shown in blue): The needle tip is in the fistula.
-- Infil[^2021paper] (shown in red): The needle tip has infiltrated the fistula.
+- NoNeedle (shown in green): The needle tip is not in the fistula.
+- Fist (shown in blue): The needle tip is in the fistula.
+- Infil (shown in red): The needle tip has infiltrated the fistula.
 
 https://user-images.githubusercontent.com/59490151/116702743-7b605a00-a997-11eb-96de-17c8098f3b70.mp4
 
-## Data sets and network parameters 
-Our networks are trained and tested using the [data sets](https://drive.google.com/drive/folders/1m18R03A3EDoURAUM184zxrcUN4C1Eieb?usp=sharing).
+## Dataset and network parameters 
+Our networks are trained and tested using the [dataset](https://drive.google.com/drive/folders/1m18R03A3EDoURAUM184zxrcUN4C1Eieb?usp=sharing).
 
-During the training process, we recorded the network parameters for the highest validation accuracy. To duplicate our results, please download those [parameters](https://drive.google.com/drive/folders/1D0HNDkNfcTo97wkUPlXHdxkag2i4PnqO?usp=sharing) and load them to the corresponding network model.
+During the training process, we recorded the network parameters corresponding to the highest validation accuracy. To duplicate our results, please download those [parameters](https://drive.google.com/drive/folders/1D0HNDkNfcTo97wkUPlXHdxkag2i4PnqO?usp=sharing) and load them to the corresponding network model.
 
 ## System requirements for training and testing the networks
 Our networks are trained and tested on a system with:
